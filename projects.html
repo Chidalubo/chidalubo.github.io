@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Okeke Chidalu - Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background: linear-gradient(135deg, #000000, #1a1a1a); /* Dark gradient background */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .projects-container {
+      width: 90%;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+    .project {
+      display: flex;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      backdrop-filter: blur(10px); /* Frosted glass effect */
+      border-radius: 20px; /* Rounded corners */
+      box-shadow: 0 8px 32px rgba(0, 255, 0, 0.2); /* Green shadow */
+      overflow: hidden;
+      position: relative;
+      border: 1px solid rgba(0, 255, 0, 0.3); /* Green border */
+    }
+    .image-section {
+      flex: 1;
+      background-image: url('project-image.jpg'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+    }
+    .content-section {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+      text-align: left;
+    }
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: #00ff00; /* Green */
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600; /* Semi-bold */
+      transition: all 0.3s ease; /* Smooth hover transition */
+    }
+    nav a:hover {
+      color: #32cd32; /* Lime green on hover */
+      transform: translateY(-2px); /* Slight lift on hover */
+    }
+    .welcome-message {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #00ff00; /* Green */
+      animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .project-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #00ff00; /* Green */
+      margin-bottom: 10px;
+    }
+    .project-description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.9); /* Slightly transparent text */
+      margin-bottom: 20px;
+    }
+    .download-button {
+      background-color: #00ff00; /* Green */
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .download-button:hover {
+      background-color: #32cd32; /* Lime green on hover */
+      transform: translateY(-2px); /* Slight lift on hover */
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+  <div class="projects-container">
+    <div class="welcome-message">My Projects</div>
+
+    <!-- Project 1 -->
+    <div class="project">
+      <div class="image-section" style="background-image: url('project1\ pic.png');"></div>
+      <div class="content-section">
+        <div class="project-title">Project 1: Manor of mystries</div>
+        <div class="project-description">
+          This project entails the development of a comprehensive text-based adventure game, blending creativity, problem-solving, and programming skills. The game invites users to immerse themselves in an interactive narrative, where they must solve a series of challenging puzzles to progress from room to room. The ultimate objective is to locate the hidden amulet and save the mysterious Manor from impending doom.
+        </div>
+        <button class="download-button" onclick="window.location.href='project1-document.pdf'">Download Project Document</button>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+      <div class="image-section" style="background-image: url('project2.jpg');"></div>
+      <div class="content-section">
+        <div class="project-title">Project 2: Website portfolio</div>
+        <div class="project-description">
+          Creating a website portfolio involves designing and developing a personal site to showcase projects, skills, and experiences. The key skills used include:
+HTML: Structures the content of the website, including text, images, and links.
+CSS: Styles the website using colors, layouts, and animations to enhance visual appeal.
+JavaScript: Adds interactivity, such as animations, dynamic content, and responsive navigation.
+        </div>
+        <button class="download-button" onclick="window.location.href='project2-document.pdf'">Download Project Document</button>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project">
+      <div class="image-section" style="background-image: url('project3.jpg');"></div>
+      <div class="content-section">
+        <div class="project-title">Project 3: Covid-19 data analyst research</div>
+        <div class="project-description">
+          ////// coming soon //////
+        </div>
+        <button class="download-button" onclick="window.location.href='project3-document.pdf'">Download Project Document</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
