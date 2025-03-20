@@ -3,97 +3,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
+  <title>Chidalu Okeke - Data Analyst Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <!-- Particle Animation Canvas -->
   <canvas id="particles"></canvas>
 
- <!-- Navigation -->
-<nav>
-  <div class="menu-toggle" id="mobile-menu">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </div>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <!-- Navigation -->
+  <nav>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- Home Section -->
   <section id="home" class="home-section">
     <div class="container">
-      <h1>Hi, I'm CHIDALU OKEKE</h1>
-      <p>A Computer Science Major passionate about building innovative solutions.</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <div class="home-content">
+        <div class="profile-picture">
+          <div class="profile-frame">
+            <img src="Pic.jpg" alt="Chidalu Okeke">
+            <div class="profile-overlay"></div>
+          </div>
+        </div>
+        <div class="home-text">
+          <h1>Hi, I'm CHIDALU OKEKE</h1>
+          <a href="#projects" class="btn">View My Work</a>
+        </div>
+      </div>
     </div>
   </section>
 
- <!-- About Section -->
-<section id="about" class="about-section">
-  <div class="container">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <!-- Profile Picture -->
-      <div class="profile-picture">
-        <img src="Pic.jpg" alt="Chidalu Okeke">
-      </div>
-      <!-- About Text -->
-      <div class="about-text">
-        <p>
-          Hi, I'm <strong>Chidalu Okeke</strong>, a Computer Science student passionate about problem-solving, software development, and data analytics. Beyond coding, I am also a <strong>creative director</strong> with a deep love for <strong>fashion</strong>, where I explore the intersection of technology and design. Whether it's crafting intuitive digital experiences, analyzing data-driven trends, or developing innovative fashion concepts, I bring a unique blend of <strong>logic and creativity</strong> to every project.
-        </p>
-        <p>
-          I thrive on pushing boundaries, merging art with technology, and creating meaningful solutions. Let’s connect and build something extraordinary!
-        </p>
+  <!-- Statistics Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Data Projects Completed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3</div>
+          <div class="stat-label">Data Visualizations Created</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">You</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Projects Section -->
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Hi, I'm <strong>Chidalu Okeke</strong>, a Computer Science student passionate about problem-solving, software development, and data analytics. Beyond coding, I am also a <strong>creative director</strong> with a deep love for <strong>fashion</strong>, where I explore the intersection of technology and design. Whether it's crafting intuitive digital experiences, analyzing data-driven trends, or developing innovative fashion concepts, I bring a unique blend of <strong>logic and creativity</strong> to every project.
+          </p>
+          <p>
+            I thrive on pushing boundaries, merging art with technology, and creating meaningful solutions. Let's connect and build something extraordinary!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Visualization Showcase -->
+  <section class="viz-showcase">
+    <div class="container">
+      <h2>Data Visualization Showcase</h2>
+      <div class="viz-grid">
+        <div class="viz-card">
+          <img src="viz.png" alt="Data Visualization 2" class="viz-image">
+          <div class="viz-content">
+            <h3>British Airways Review</h3>
+            <p>Designed interactive Tableau dashboards to analyze key trends in British Airways' operations</p>
+            <div class="project-tech">
+              <span class="tech-tag">Tableau</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Projects Section -->
   <section id="projects" class="projects-section">
     <div class="container">
-      <h2>Projects</h2>
+      <h2>Featured Projects</h2>
       <div class="project-grid">
         <div class="project-card">
-          <h3>Project 1: Shootings in America – Data Analytics Project</h3>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Project 1: Shootings in America – Data Analytics Project</h3>
+          </div>
           <p>Performed end-to-end data cleaning and visualization using Python and Excel.
             Built an interactive Excel dashboard for real-time trend analysis.
             Researched policy implications based on demographic and geographic insights.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Excel</span>
+            <span class="tech-tag">Data Analysis</span>
+          </div>
           <a href="https://github.com/Chidalubo/Fatal_Police_shootings" class="btn">View on GitHub</a>
         </div>
         <div class="project-card">
-          <h3>Project 2: British Airways Review – Tableau Dashboard</h3>
-          <p>Designed interactive Tableau dashboards to analyze key trends in British Airways’ operations.
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Project 2: British Airways Review – Tableau Dashboard</h3>
+          </div>
+          <p>Designed interactive Tableau dashboards to analyze key trends in British Airways' operations.
             Created multiple visualizations, including aircraft statistics, monthly trends, and geographic distributions.
-            Integrated multiple data sources and utilized calculated fields for deeper insights.
-            </p>
+            Integrated multiple data sources and utilized calculated fields for deeper insights.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Tableau</span>
+            <span class="tech-tag">Data Visualization</span>
+            <span class="tech-tag">Business Analytics</span>
+          </div>
           <a href="https://github.com/Chidalubo/British-airway-data-reviews-" class="btn">View on GitHub</a>
         </div>
         <div class="project-card">
-          <h3>Project 3: Personal Portfolio Website</h3>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Project 3: Personal Portfolio Website</h3>
+          </div>
           <p>Designed and developed a responsive, tech-themed portfolio website using HTML, CSS, and JavaScript.
              Implemented a dynamic particle animation background for a futuristic feel.
              Utilized modern design principles like glassmorphism and neon glow effects.
              Ensured cross-browser compatibility and mobile responsiveness.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
           <a href="https://github.com/Chidalubo/chidalubo.github.io" class="btn" target="_blank">View on GitHub</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Enhanced Skills Section -->
   <section id="skills" class="skills-section">
     <div class="container">
-      <h2>Skills</h2>
+      <h2>Skills & Expertise</h2>
       <div class="skills-grid">
         <div class="skill-card">
           <h3>Programming Languages</h3>
@@ -101,9 +179,14 @@
             <li>Python</li>
             <li>SQL</li>
             <li>R</li>
-            <li>c#</li>
+            <li>C#</li>
             <li>C++</li>
           </ul>
+          <div class="skill-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 90%"></div>
+            </div>
+          </div>
         </div>
         <div class="skill-card">
           <h3>Web Development</h3>
@@ -125,19 +208,47 @@
     </div>
   </section>
 
- <!-- Contact Section -->
-<section id="contact" class="contact-section">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <p>If you'd like to get in touch, feel free to reach out!</p>
-    <form action="https://getform.io/f/bxowrgka" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </div>
-</section>
+  <!-- Enhanced Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <div class="contact-info">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            <h3>Email</h3>
+            <p>chidalubo@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div>
+            <h3>Phone</h3>
+            <p>403-360-6314</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div>
+            <h3>Location</h3>
+            <p>Lethbridge, Canada</p>
+          </div>
+        </div>
+      </div>
+      <form action="https://getform.io/f/bxowrgka" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
