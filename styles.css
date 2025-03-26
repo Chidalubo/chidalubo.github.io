@@ -349,6 +349,34 @@ nav ul li a:hover::after {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.skill-card ul li a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.skill-card ul li a:hover {
+  color: var(--primary-color);
+  transform: translateX(5px);
+}
+
+.skill-card ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: width 0.3s ease;
+}
+
+.skill-card ul li a:hover::after {
+  width: 100%;
+}
+
 /* Contact Section */
 .contact-section {
   padding: 6rem 0;
